@@ -3,7 +3,6 @@
   <head>
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
@@ -29,6 +28,8 @@
       <%= link_to "Register", new_user_registration_path %>
       <%= link_to "Login", new_user_session_path %>
     <% end %>
+
+    <%= yield %>
 
     <% if session[:source] %>
       <p>Thanks for visiting me fom <%= session[:source] %>
