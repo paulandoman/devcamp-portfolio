@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/paulandoman/andoman_view_tool
+  revision: af8a766405fb387d2d3348a431e0f55f4c5051dc
+  specs:
+    andoman_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -210,6 +216,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  andoman_view_tool!
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.3.1)
   byebug
