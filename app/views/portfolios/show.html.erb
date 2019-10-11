@@ -1,7 +1,7 @@
 <div class="container portfolio-container">
   <div class="row">
     <div class="col-md-7">
-      <%= image_tag @portfolio_item.main_image, width: '100%' %>
+      <%= image_tag portfolio_img(@portfolio_item.main_image, 'main') %>
     </div>
 
     <div class="col-md-5">
@@ -10,15 +10,16 @@
       <hr>
 
       <em><%= @portfolio_item.subtitle %></em>
+
       <p><%= @portfolio_item.body %></p>
 
       <hr>
 
-      <h3>Technologies Used:</h2>
+      <h3>Technologies Used:</h3>
 
       <% @portfolio_item.technologies.each do |t| %>
-        <p><%= t.name %></p>
-      <%end%>
+      <p><%= t.name %></p>
+      <% end %>
     </div>
   </div>
 </div>
